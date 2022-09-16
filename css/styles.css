@@ -387,13 +387,13 @@ img {
     width: 448px;
     height: 40px;
     margin: 0;
-    padding: ;
+    padding: 0;
     
 
 }
 /*section*/
 .features-container {
-
+margin-left: auto;
   
 }
 
