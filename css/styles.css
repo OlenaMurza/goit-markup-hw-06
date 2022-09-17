@@ -347,13 +347,10 @@ img {
   
     margin: 40px;
     padding: 0;
-
-
 }
 
-.content-register-form {
+.content-register-title {
    border: 1px solid tomato;
-    text-transform: uppercase;
    
     margin-bottom: 12px;
     font-weight: 700;
