@@ -78,24 +78,24 @@
               <label class="register-form-field">
                 <span class="register-form-label">Ім'я</span>
                 <input class="register-form-input" type="name" name="name">
-                <svg width="18" height="18" > 
-                  <use href="" ></use>
+                <svg  class="register-form-icon" width="18" height="18" > 
+                  <use href="./images/icomoon (8)/symbol-defs.svg#person-black-18dp" ></use>
                 </svg>
               </label>
 
               <label  class="register-form-field">
                 <span class="register-form-label">Телефон</span>
                 <input class="register-form-input" type="tel"  name="tel">
-                <svg width="18" height="18" > 
-                  <use href="" ></use>
+                <svg class="register-form-icon" width="18" height="18" > 
+                  <use href="./images/icomoon (8)/symbol-defs.svg#phone-black-18dp" ></use>
                 </svg>
               </label>
 
               <label class="register-form-field">
                 <span class="register-form-label">Пошта</span>
                 <input class="register-form-input" type="email" name="email">
-                <svg width="18" height="18" > 
-                  <use href="" ></use>
+                <svg class="register-form-icon" width="18" height="18" > 
+                  <use href="./images/icomoon (8)/symbol-defs.svg#email-black-18dp"></use>
                 </svg>
               </label>
 
@@ -106,10 +106,9 @@
              </div>
 
               <label class="register-form-agrement">
-                <input  class="register-form-checkbox" type="checkbox" name="" id="">
+                <input  class="register-form-checkbox" type="checkbox" name="checkbox" id="">
                 <span class="register-form-desc">Погоджуюся з розсилкою та приймаю <a class="register-formlink" href="">Умови договору</a></span>
               </label>
-
               <button class="register-form-btn" type="submit">Відправити</button>
            </form>
         </div>
@@ -473,7 +472,7 @@
           
           <div class="social-footer">
             <p class="content-footer">приєднуйтесь</p>
-            <ul class="social">
+            <ul class="social-footer-group">
                  <li class="social-item">
                    <a class="social-link-footer" href="https://www.instagram.com" target="_blank" rel="noopener no-referrer"
                    arial-label="Instagram"><svg class="social-icon"><use href="./images/symbol-defs.svg#instagram"></use></svg></a>
@@ -491,16 +490,19 @@
                 arial-label="Linkedin"><svg class="social-icon"><use href="./images/symbol-defs.svg#linkedin"></use></svg></a>
               </li>           
             </ul>
+          </div>
 
-            <div>
-              <p class="content-footer">Підпишіться на розсилку</p>
-               <label>
-                <input type="email" name="email" placeholder="E-mail">
-                <svg width="18" height="18" > 
-                  <use href="" ></use>
+            <div class="subscription-footer">
+              <p class="content-footer-title">Підпишіться на розсилку</p>
+               <label class="subscription-footer">
+                <input  class="subscription-footer-mail" type="email" name="email" placeholder="E-mail">
+                     
+              <button class="subscription-footer-button" type="submit">Підписатися
+               <svg  class="subscription-icon" width="24" height="24"> 
+                  <use href="./images/icomoon (8)/symbol-defs.svg#send"></use>
                 </svg>
-              </label>
-              <button type="submit">Підписатися</button>
+             </button>
+               </label> 
             </div>
        
       </div>       

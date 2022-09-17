@@ -357,7 +357,6 @@ img {
     font-weight: 700;
     font-size: 20px;
     line-height: 1.15;
-    
     letter-spacing: 0.03em;
     
     color: #212121;
@@ -396,22 +395,42 @@ margin-bottom: 10px;
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+    padding-right: 30px;
+    padding-left: 30px;
+    outline: transparent;
+    transition: border-color;
       
 }
 
+.register-form-input:focus,
+.register-form-input:hover {
+border-color: #2196F3;
+}
+
 .register-form-message {
-    width: 100%;
+    width: 448px;
+    height: 120px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     margin-bottom: 20px;
-    
+    transition: border-color;
+    outline: none;
+}
+
+.register-form-message:focus,
+.register-form-message:hover {
+    border-color: #2196F3;
+}
+
+.register-form-icon {
+
 }
 
 .register-form-agrement {
     display: flex;
     align-items: center;
     justify-content: center;
-margin-bottom: 30px;
+    margin-bottom: 30px;
 }
 
 .register-form-btn {
@@ -822,6 +841,15 @@ color: #2196F3;
     gap: 10px;
 }
 
+.social-footer {
+margin-right: 93px;
+}
+
+.social-footer-group {
+    display: flex;
+    gap: 10px;
+}
+
 .social-item {
         width: 44px;
         height: 44px;
@@ -855,6 +883,82 @@ color: #2196F3;
     outline: 0;
    }
 
+.subscription-footer {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+   }
+
+.content-footer-title {
+margin: 0;
+margin-bottom: 20px;
+width: 207px;
+height: 16px;
+
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+
+color: #FFFFFF;
+}
+
+.subscription-footer-mail {
+       margin-right: 12px;
+width: 358px;
+height: 50px;
+background-color: inherit;
+border: 1px solid rgba(255, 255, 255, 0.3);
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+border-radius: 4px;
+}
+
+.subscription-footer-mail::placeholder {
+width: 47px;
+height: 20px;
+
+font-weight: 400;
+font-size: 16px;
+line-height: 1.25;
+display: flex;
+align-items: center;
+letter-spacing: 0.03em;
+color: rgba(255, 255, 255, 0.6);
+padding: 15px 16px 295px;
+}
+
+.subscription-footer-button {
+
+width: 200px;
+height: 50px;
+margin: 0;
+padding: 0;
+gap: 10px;
+color: #FFFFFF;
+background-color: #2196F3;
+border-radius: 4px;
+border: 0;
+}
+
+.subscription-footer-button::type {
+
+width: 110px;
+height: 30px;
+
+font-weight: 700;
+font-size: 16px;
+line-height: 1.88;
+
+display: flex;
+align-items: center;
+justify-content: center;
+letter-spacing: 0.06em;
+}
+
+.subscription-icon {
+    fill: #fff;
+}
 
 /* Portfolio */
   /* top-line */
