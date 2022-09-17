@@ -106,8 +106,12 @@
              </div>
 
               <label class="register-form-agrement">
-                <input  class="register-form-checkbox" type="checkbox" name="checkbox" id="">
-                <span class="register-form-desc">Погоджуюся з розсилкою та приймаю <a class="register-formlink" href="">Умови договору</a></span>
+                <input  class="register-form-checkbox hidden-element" type="checkbox" name="checkbox">
+                <svg class="register-form-icons" width="16" height="15">
+                  <use class="icon-unckecked" href="./images/icomoon (8)/symbol-defs1.svg#vector"></use>
+                  <use class="icon-checked" href="./images/icomoon (8)/symbol-defs1.svg#vector"></use>
+                </svg>
+                <span class="register-form-desc">Погоджуюся з розсилкою та приймаю <a class="register-form-link" href="">Умови договору</a></span>
               </label>
               <button class="register-form-btn" type="submit">Відправити</button>
            </form>
@@ -496,13 +500,13 @@
               <p class="content-footer-title">Підпишіться на розсилку</p>
                <label class="subscription-footer">
                 <input  class="subscription-footer-mail" type="email" name="email" placeholder="E-mail">
+              </label> 
                      
               <button class="subscription-footer-button" type="submit">Підписатися
                <svg  class="subscription-icon" width="24" height="24"> 
                   <use href="./images/icomoon (8)/symbol-defs.svg#send"></use>
                 </svg>
              </button>
-               </label> 
             </div>
        
       </div>       
