@@ -366,16 +366,8 @@ img {
 
 .register-form-group {
 margin-bottom: 20px;
-    
-    /* display: block;
-    flex-direction: column ;
-    align-items: flex-start;
-    justify-content: flex-start;
-    margin: 0;
-    padding: 0;
-     */
-    width: 448px;
-    height: 342px;   
+width: 448px;
+height: 342px;   
 }
 
 .register-form-field {
@@ -391,7 +383,6 @@ margin-bottom: 10px;
 }
 
 .register-form-label {
-    
     display: block;
     font-size: 12px;
     line-height: 1.16;
@@ -409,22 +400,36 @@ margin-bottom: 10px;
     padding-right: 30px;
     padding-left: 30px;
     outline: transparent;
-      
-transition-duration: 250ms;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
+    transition-property: border fill;    
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
-.register-form-input:focus,
-.register-form-input:hover {
-border-color: #2196F3;
-transition-property: border;
-transition-duration: 250ms;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+.register-form-icon {
+    position: absolute;
+    bottom: 0;
+    left: 12px;
+    transform: translateY(-65%);
+    fill: currentColor;
+    transition: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.register-form-input:hover, 
+.register-form-input:focus {
+    border-color: #2196F3;
+}
+
+.register-form-input:focus+.register-form-icon,
+.register-form-input:hover+.register-form-icon {
+fill: #2196F3;
+}
+
+
 
 .register-form-input::placeholder {
     opacity: 0;
-    transition: opacity color #2196F3;
 }
 
 .register-form-message {
@@ -441,20 +446,8 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     line-height: 1.16;
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
-
 }
 
-.register-form-icon {
-    position: absolute;
-    bottom: 0;
-    left: 12px;
-    transform: translateY(-65%);
-    transition: fill;
-}
-
-.register-form-icon:focus {
-    fill: currentColor;
-}
 
 .register-form-message:focus,
 .register-form-message:hover {
@@ -473,41 +466,28 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     gap: 8px;
 }
 
+.icon-unchecked {
+    opacity: 1;   
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.register-form-checkbox:checked + 
+.register-form-icons .icon-unchecked {
+opacity: 0;   
+}
+
 .icon-checked {
     opacity: 0;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    fill: #2196F3;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+   
 }
 .register-form-checkbox:checked + 
 .register-form-icons .icon-checked {
     opacity: 1;
 }
-
-.icon-unchecked {
-    opacity: 1;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    color: #2196F3;
-
-}
-
-.register-form-checkbox:checked + 
-.register-form-icons .icon-unchecked {
-    opacity: 0
-}
-
-/* .hidden-element {
-position: absolute;
-width: 1px;
-height: 1px;
-margin: -1px;
-border: 0;
-white-space: nowrap;
-clip-path: inset(100%);
-overflow: hidden;
-} */
-
-/* .register-form-checkbox:checked + .register-form-icons .icon-checked {
-    opacity: 1;
-} */
 
 .register-form-btn {
     display: block;
@@ -518,7 +498,6 @@ overflow: hidden;
     border: 0;
     color: #fff;
     border-radius: 4px;
-
 }
 
 .register-form-desc {
@@ -533,11 +512,12 @@ overflow: hidden;
 .register-form-link {
     color: #2196F3;
 }
+
+
 /*section*/
 .features-container {
 margin-left: auto;
-  
-}
+  }
 
 .features-list:last-child {
     margin-right: 0;
